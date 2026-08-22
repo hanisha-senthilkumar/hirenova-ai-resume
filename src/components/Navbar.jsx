@@ -1,7 +1,22 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Sparkles, Upload, Menu, X, LogIn } from 'lucide-react';
+import {
+  Sparkles,
+  Upload,
+  Menu,
+  X,
+  LogIn,
+  LayoutDashboard,
+  FileSearch,
+  FileCheck,
+  Briefcase,
+  FolderGit2,
+  Milestone,
+  User,
+  ShieldAlert
+} from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import NotificationBell from './NotificationBell';
 import UserDropdown from './UserDropdown';
 import MobileMenu from './MobileMenu';
 import './Navbar.css';
@@ -12,10 +27,15 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // ONLY AI-5 Scope Navigation Items
   const navLinks = [
-    { name: 'Dashboard', path: '/dashboard' },
-    { name: 'Job Matcher', path: '/job-matcher' },
+    { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
+    { name: 'Resume Analyzer', path: '/job-matcher', icon: FileSearch },
+    { name: 'Build Resume', path: '/build-resume', icon: FileCheck },
+    { name: 'Recommended Jobs', path: '/recommended-jobs', icon: Briefcase },
+    { name: 'Projects', path: '/projects', icon: FolderGit2 },
+    { name: 'Career Roadmap', path: '/roadmap', icon: Milestone },
+    { name: 'Profile', path: '/profile', icon: User },
+    { name: 'Admin', path: '/admin', icon: ShieldAlert }
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -30,11 +50,11 @@ const Navbar = () => {
           </div>
           <div className="brand-text-group">
             <span className="brand-title">HireNova</span>
-            <span className="brand-subtext">AI CAREER INTELLIGENCE</span>
+            <span className="brand-subtext">AI CAREER PLATFORM</span>
           </div>
         </Link>
 
-        {/* Desktop Navigation Links (Only Dashboard & Job Matcher) */}
+        {/* Desktop Navigation Links */}
         <nav className="navbar-desktop-nav">
           {navLinks.map((link) => (
             <Link
@@ -49,6 +69,9 @@ const Navbar = () => {
 
         {/* Right Section */}
         <div className="navbar-right">
+          {/* Notification Bell */}
+          <NotificationBell />
+
           {isSignedIn ? (
             <>
               <UserDropdown />

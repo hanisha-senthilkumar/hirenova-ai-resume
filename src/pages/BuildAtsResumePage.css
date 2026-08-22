@@ -1,0 +1,347 @@
+.build-ats-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.builder-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.template-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.picker-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-right: 0.25rem;
+}
+
+.t-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.t-btn:hover {
+  border-color: var(--primary-border);
+  color: var(--primary);
+}
+
+.t-btn.active {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary-border);
+}
+
+.builder-split-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.builder-editor-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.editor-section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sec-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec-title-bar h4 {
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+.reorder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.reorder-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-main);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+}
+
+.reorder-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.reorder-btns {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.btn-order {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 0.2rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.btn-order:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nested-editor-box {
+  padding: 0.875rem;
+  background: var(--bg-main);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.nested-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.btn-trash {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+/* RIGHT: PREVIEW STYLING */
+.builder-preview-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-sticky-wrapper {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.preview-label-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.template-tag {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  text-transform: capitalize;
+}
+
+/* Printable ATS Resume Surface */
+.ats-resume-sheet {
+  background: #ffffff;
+  color: #111827;
+  padding: 2.25rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d1d5db;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.4;
+  min-height: 700px;
+}
+
+/* Modern Template Styles */
+.template-modern {
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.template-modern .ats-header {
+  border-bottom: 2px solid #4f46e5;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.template-modern .ats-name {
+  font-size: 1.6rem;
+  color: #1e1b4b;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.template-modern .ats-title {
+  font-size: 0.95rem;
+  color: #4f46e5;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.template-modern .ats-contact-line {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.template-modern .ats-section {
+  margin-bottom: 1rem;
+}
+
+.template-modern .ats-section-heading {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #1e1b4b;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Classic Executive Template */
+.template-classic {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.template-classic .ats-header {
+  text-align: center;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.template-classic .ats-name {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.template-classic .ats-section-heading {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.1rem;
+}
+
+/* Minimal Template */
+.template-minimal {
+  font-family: Arial, sans-serif;
+}
+
+.template-minimal .ats-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.template-minimal .ats-section-heading {
+  font-size: 0.85rem;
+  font-weight: bold;
+  background: #f3f4f6;
+  padding: 0.15rem 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Shared Entry Formatting */
+.ats-summary-text {
+  font-size: 0.85rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.ats-skills-line {
+  font-size: 0.85rem;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.ats-exp-entry,
+.ats-proj-entry,
+.ats-edu-entry {
+  margin-bottom: 0.75rem;
+}
+
+.ats-exp-header,
+.ats-proj-header,
+.ats-edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.875rem;
+}
+
+.ats-date {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.ats-exp-company,
+.ats-edu-school {
+  font-size: 0.825rem;
+  color: #4b5563;
+  margin-bottom: 0.2rem;
+}
+
+.ats-entry-desc {
+  font-size: 0.825rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.ats-bullet-list {
+  padding-left: 1.25rem;
+  font-size: 0.825rem;
+  color: #374151;
+}
+
+@media (max-width: 900px) {
+  .builder-split-view {
+    grid-template-columns: 1fr;
+  }
+  .preview-sticky-wrapper {
+    position: static;
+  }
+}

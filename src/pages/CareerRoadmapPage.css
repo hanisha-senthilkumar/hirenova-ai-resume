@@ -1,0 +1,205 @@
+.career-roadmap-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.roadmap-progress-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(238, 242, 255, 0.7) 100%);
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.progress-hero-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.trophy-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.roadmap-target-heading {
+  font-size: 1.35rem;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.roadmap-subtext {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.progress-hero-right {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  gap: 0.5rem;
+}
+
+.pct-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pct-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.pct-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.big-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: var(--border-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.big-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent-purple) 100%);
+  border-radius: var(--radius-full);
+  transition: width 0.4s ease;
+}
+
+.roadmap-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.roadmap-stage-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.roadmap-stage-card.completed-stage {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(240, 253, 244, 0.6);
+}
+
+.stage-checkbox-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stage-checkbox {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.step-badge-num {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--text-light);
+  white-space: nowrap;
+}
+
+.stage-content-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stage-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stage-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stage-title {
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.stage-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-main);
+  color: var(--text-muted);
+}
+
+.stage-tag.done {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.stage-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.stage-skills-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  margin-top: 0.25rem;
+}
+
+.box-lbl {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.stage-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.stage-skill-pill {
+  font-size: 0.75rem;
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+.stage-action-bar {
+  margin-top: 0.5rem;
+}

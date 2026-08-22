@@ -6,7 +6,7 @@
 
 .features-section {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .features-header {
@@ -24,10 +24,33 @@
 .features-subtitle {
   font-size: 1rem;
   color: var(--text-muted);
-  max-width: 540px;
+  max-width: 580px;
   margin: 0 auto;
 }
 
 .features-grid {
   margin-top: 1.5rem;
+}
+
+.landing-cta-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 3rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(238, 242, 255, 0.8) 100%);
+  border: 1px solid var(--primary-border);
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-banner-content h2 {
+  font-size: 1.6rem;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.cta-banner-content p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
 }
