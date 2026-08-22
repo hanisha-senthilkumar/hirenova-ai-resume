@@ -104,40 +104,40 @@ Instead of manually reviewing job postings line-by-line, candidates receive inst
 
 ```mermaid
 flowchart TD
-    subgraph UserLayer["👤 User Layer"]
+    subgraph UserLayer[" User Layer"]
         User["User"]
     end
 
-    subgraph FrontendLayer["💻 Frontend Layer (React 18 + Vite)"]
+    subgraph FrontendLayer[" Frontend Layer (React 18 + Vite)"]
         WebApp["HireNova Web Application"]
         Navbar["Responsive Navigation & Puter Auth Dropdown"]
         ResumeInput["Resume Upload (PDF / TXT)"]
         JDInput["Job Description Input"]
     end
 
-    subgraph ProcessingLayer["⚙️ Processing Layer (Client-Side)"]
+    subgraph ProcessingLayer[" Processing Layer (Client-Side)"]
         PDFParser["PDF.js Text Extractor (pdfjs-dist)"]
         TXTReader["Native FileReader API"]
     end
 
-    subgraph AnalysisLayer["📊 Deterministic Analysis Layer (matchingEngine.js)"]
+    subgraph AnalysisLayer[" Deterministic Analysis Layer (matchingEngine.js)"]
         SkillEngine["Skill Match Engine (45% Weight)"]
         KeywordEngine["Keyword Match Engine (25% Weight)"]
         CosineEngine["TF-IDF Cosine Similarity (30% Weight)"]
         ScoreCalc["Weighted Overall Score (0-100%)"]
     end
 
-    subgraph RecommendationLayer["🤖 AI Recommendation Layer (puterAIService.js)"]
+    subgraph RecommendationLayer[" AI Recommendation Layer (puterAIService.js)"]
         PuterAI["Puter.js AI Service (window.puter.ai.chat)"]
         AIValidator["Response Schema Validator & Fallback"]
     end
 
-    subgraph PresentationLayer["📈 Presentation Layer"]
+    subgraph PresentationLayer[" Presentation Layer"]
         Dashboard["Results Dashboard & Analytics"]
         AIInsights["AI Insights & Actionable Guidance"]
     end
 
-    subgraph PlannedLayer["🔮 Future Architecture (Planned)"]
+    subgraph PlannedLayer[" Future Architecture (Planned)"]
         PlannedBackend["Planned Serverless Backend & Database"]
     end
 
