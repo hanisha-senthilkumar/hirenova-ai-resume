@@ -1,0 +1,29 @@
+.protected-loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: 1rem;
+}
+
+.protected-spinner {
+  color: var(--primary);
+  animation: spin 1s linear infinite;
+}
+
+.protected-loader-text {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

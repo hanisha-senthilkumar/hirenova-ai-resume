@@ -1,0 +1,33 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.features-section {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.features-title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.features-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  margin-top: 1.5rem;
+}

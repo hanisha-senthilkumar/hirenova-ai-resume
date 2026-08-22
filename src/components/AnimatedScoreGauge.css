@@ -1,0 +1,225 @@
+.hero-score-card {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.hero-score-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formula-toggle-btn {
+  font-size: 0.8125rem;
+}
+
+.hero-score-main {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+}
+
+.score-circle-outer {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.15);
+}
+
+.score-circle-outer.score-strong {
+  background: conic-gradient(#10b981 0% 85%, #e2e8f0 85% 100%);
+}
+
+.score-circle-outer.score-moderate {
+  background: conic-gradient(var(--primary) 0% 68%, #e2e8f0 68% 100%);
+}
+
+.score-circle-outer.score-weak {
+  background: conic-gradient(#f59e0b 0% 35%, #e2e8f0 35% 100%);
+}
+
+.score-circle-inner {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-number {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.score-sub-label {
+  font-size: 0.625rem;
+  font-weight: 800;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.125rem;
+}
+
+.score-meta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.score-label-heading {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.score-label-subtext {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 540px;
+}
+
+.formula-box {
+  padding: 1.25rem;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.formula-box-heading {
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.formula-pills-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.formula-pill {
+  display: flex;
+  flex-direction: column;
+}
+
+.pill-pct {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.pill-name {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.formula-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.breakdown-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.metric-glass-card {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.metric-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.metric-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.icon-green { color: #10b981; }
+.icon-purple { color: var(--accent-purple); }
+.icon-indigo { color: var(--primary); }
+
+.metric-score-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.metric-val {
+  font-family: var(--font-heading);
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.metric-weight {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: var(--border-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.8s ease-out;
+}
+
+.green-fill { background: #10b981; }
+.purple-fill { background: var(--accent-purple); }
+.indigo-fill { background: var(--primary); }
+
+@media (max-width: 768px) {
+  .hero-score-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .breakdown-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formula-pills-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

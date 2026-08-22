@@ -1,0 +1,167 @@
+.skills-keywords-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-result-card {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.section-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.section-card-title {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.header-icon-green { color: #10b981; }
+.header-icon-amber { color: #f59e0b; }
+.header-icon-purple { color: var(--primary); }
+.header-icon-slate { color: var(--text-light); }
+
+.pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-pill, .keyword-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.status-tag {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-left: 0.25rem;
+}
+
+.matched-pill {
+  background: #ecfdf5;
+  color: #059669;
+  border-color: #a7f3d0;
+}
+
+.missing-required-pill {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+
+.missing-preferred-pill {
+  background: #fffbebfb;
+  color: #d97706;
+  border-color: #fde68a;
+}
+
+.matched-kw-pill {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary-border);
+}
+
+.missing-kw-pill {
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  border-color: var(--border-light);
+}
+
+.skill-subgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.subgroup-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.subgroup-label.required { color: #dc2626; }
+.subgroup-label.preferred { color: #d97706; }
+
+.empty-pills-text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.empty-pills-text.green-text {
+  color: #059669;
+  font-weight: 600;
+}
+
+/* Keyword Section Styling */
+.keyword-section-wrapper {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.keyword-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.keyword-search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+}
+
+.search-icon {
+  color: var(--text-light);
+}
+
+.keyword-search-input {
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--text-main);
+  outline: none;
+  width: 160px;
+}
+
+.keywords-result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.sub-card-header {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+}

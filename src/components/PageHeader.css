@@ -1,0 +1,32 @@
+.page-header {
+  margin-bottom: 2.5rem;
+}
+
+.page-header-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+}
+
+.page-header-desc {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    margin-bottom: 1.75rem;
+  }
+  
+  .page-header-title {
+    font-size: 1.75rem;
+  }
+  
+  .page-header-desc {
+    font-size: 0.9375rem;
+  }
+}
