@@ -100,10 +100,10 @@ Display Results
 
  Team Name: MetaMinds
 
-Role| Team Member
- Team Lead| Harsithaa Prakash
- Team Member| Hanisha Senthilkumar
- Team Member| Kanish Kumar
+
+ Team Lead - Harsithaa Prakash
+ Team Member - Hanisha Senthilkumar
+ Team Member - Kanish Kumar
 
 🎯 Objective
 
